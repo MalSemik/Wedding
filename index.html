@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gosia & Rafał</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="head">
+        <h1>Gosia & Rafał</h1>
+        <h2>11.07.2019</h2>
+    </header>
+    <!-- 
+    <nav class="clearfix">
+        <a href="#head">Home</a>
+        <a href="#carouselExampleSlidesOnly">O nas</a>
+        <a href="">Nasz dzień</a>
+        <a href="">Będziesz?</a>
+    </nav> -->
+
+    <div class="about">CAROUSEL</div>
+    <div class="gosia">
+
+        <div class="description">
+
+            <h4>Gosia</h4>
+            <h5>09.04.1994</h5>
+            <h5>Filolog włoska z zamiłowaniem do informatyki. W wolnych chwilach tworzy szydełkowe
+                maskotki.</h5>
+        </div>
+        <div class="photoG"></div>
+    </div>
+    <div class="rafal">
+        <div class="photoR"></div>
+        <div class="description">
+            <h4>Rafał</h4>
+            <h5>06.11.1995</h5>
+            <h5>Zawsze uśmiechnięty pan programista pochodzący z Miejsca Piastowego,
+                którego pasją jest koszykówka i obserwacje nocnego nieba.
+
+        </div>
+
+    </div>
+    <div class="countdown">COUNTDOWN
+        <h4>Bierzemy ślub za:</h4>
+        <p id="demo"></p>
+    </div>
+    <div class=places>
+
+
+        <div class="church">
+            <div class="bg">
+                <h3>Msza Święta w Kościele Świętego Stanisława Bp. i M. w Andrychowie</h3>
+                <h3> Godzina 15:00</h3>
+            </div>
+        </div>
+
+
+        <div class="adria">
+            <div class="bg">
+                <h3>Przyjęcie w restauracji Adria w Andrychowie</h3>
+                <h3> Godzina 16:30</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="confirm">
+        <h4>Potwierdź swoje przybycie tutaj:</h4>
+        <button><a href="/login.html">Potwierdź</a></button>
+    </div>
+    <footer>
+
+    </footer>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 11, 2020 15:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "dni " + hours + "godzin " +
+                minutes + "minut " + seconds + "sekund ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+
+</html>

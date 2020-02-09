@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    background-color: white;
+    font-family: 'Marck Script', cursive;
+}
+
+header {
+    background-image: url(people.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.9;
+}
+
+
+h3 {
+    font-size: 35px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 16vh;
+    color: white;
+}
+
+.form {
+    height: 20vh;
+    width: 70vw;
+    position: absolute;
+    top: 70vh;
+    left: 20vw;
+
+}
+
+form {
+
+    top: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+input {
+    text-align: center;
+    opacity: 0.5;
+
+    border: 1px solid fade(white, 40%);
+    background-color: fade(white, 20%);
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    margin-top: 15px;
+    margin-left: 12px;
+    border: 1px solid fade(white, 40%);
+    background-color: fade(white, 20%);
+    border-radius: 25px;
+    font-size: 20px;
+    width: 50vw;
+}

@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(255, 251, 212);
+    font-family: 'Marck Script', cursive;
+}
+
+.about {
+    background-color: #000;
+    height: 50vh;
+    width: 100vw;
+}
+
+.gosia {
+    background-color: #333;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.rafal {
+    background-color: #111;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.description {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+h4 {
+    color: white;
+    align-self: center;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+h5 {
+    color: white;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.photoR {
+
+    background-image: url(rafcio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.photoG {
+
+    background-image: url(gosia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+
+.countdown {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(221, 141, 201);
+}
+
+.places {
+    background-color: rgb(255, 252, 241);
+    width: 100vw;
+    height: 95vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.church {
+    /* opacity: 0.5; */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    /* border: none; */
+    background-image: url(church.jpeg);
+    height: 40vh;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+
+
+}
+
+.adria {
+    /* opacity: 0.5; */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    /* border: none; */
+    background-image: url(adria.jpg);
+    height: 40vh;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+
+
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40vh;
+    width: 90vw;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h3 {
+
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    align-self: space-between;
+    padding: 10px;
+
+}
+
+/* div {
+    height: 200vh;
+   
+} */
+
+/* Header */
+/* header dla dużego */
+/* header {
+    background-image: url(people.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+header {
+    background-image: url(people.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1,
+h2 {
+    color: antiquewhite;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 40px;
+    position: absolute;
+    bottom: 13vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 30px;
+    bottom: 5vh
+}
+
+/* Nawigacja */
+/* 
+nav {
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.514);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    z-index: 999;
+}
+
+nav a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    line-height: 8vh;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+} */
+
+.confirm {
+    width: 100vw;
+    height: 40vh;
+    background-color: orange;
+}
+
+footer {
+    background-color: rgb(48, 48, 48);
+    width: 100vw;
+    height: 20vh;
+}
+
+
+@media(min-width: 1000px) {
+
+    .places {
+        background-color: rgb(255, 252, 241);
+        width: 90vw;
+        height: 95vh;
+        /* position: relative; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+    }
+
+
+
+    .church {
+        /* opacity: 0.5; */
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+        /* border: none; */
+        background-image: url(church.jpeg);
+        height: 70vh;
+        width: 40vw;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* align-self: center; */
+
+
+
+    }
+
+
+    .adria {
+        /* opacity: 0.5; */
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+        /* border: none; */
+        background-image: url(adria.jpg);
+        height: 70vh;
+        width: 40vw;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+
+        /* align-self: center; */
+
+
+    }
+
+    .bg,
+    h3 {
+        opacity: 0;
+        transition: 0.5s;
+        height: 70vh;
+        width: 40vw;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .church:hover .bg {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 70vh;
+        width: 40vw;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+
+    .church:hover h3 {
+        /* display: inline; */
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        align-self: space-between;
+        opacity: 1;
+
+    }
+
+    .adria:hover .bg {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 70vh;
+        width: 40vw;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+
+    .adria:hover h3 {
+        /* display: inline; */
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        align-self: space-between;
+        opacity: 1;
+
+    }
+}
