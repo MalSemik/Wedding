@@ -15,11 +15,10 @@ body {
     font-family: 'Marck Script', cursive;
 }
 
-.about {
-    background-color: #000;
+/* .about {
     height: 50vh;
     width: 100vw;
-}
+} */
 
 .gosia {
     background-color: #ffffff;
@@ -279,16 +278,32 @@ nav a {
     padding-top: 15px;
 }
 
-.confirm button {
+.confirm a {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    border: 1none;
+    background-color: #FAF1EC;
+    border-radius: 25px;
+    margin: 15px auto;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    text-decoration: none;
 }
 
+.confirm a:hover {
+    background-color: rgb(243, 196, 171);
+}
 
 footer {
-    background-color: rgb(48, 48, 48);
+    background-color: #30393E;
     width: 100vw;
     height: 20vh;
 }
