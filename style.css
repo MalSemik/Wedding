@@ -11,7 +11,7 @@
 
 body {
     height: 100%;
-    background-color: rgb(255, 251, 212);
+    background-color: white;
     font-family: 'Marck Script', cursive;
 }
 
@@ -93,7 +93,7 @@ h5 {
 
 .countdown {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: #FAF1EC;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -267,8 +267,25 @@ nav a {
 .confirm {
     width: 100vw;
     height: 40vh;
-    background-color: orange;
+    background-image: url(flower.jpg);
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+
 }
+
+.confirm h4 {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.confirm button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 footer {
     background-color: rgb(48, 48, 48);
