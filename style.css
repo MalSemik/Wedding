@@ -22,7 +22,7 @@ body {
 }
 
 .gosia {
-    background-color: #333;
+    background-color: #ffffff;
     height: 40vh;
     width: 100vw;
     display: flex;
@@ -33,7 +33,7 @@ body {
 
 
 .rafal {
-    background-color: #111;
+    background-color: #fff;
     height: 40vh;
     width: 100vw;
     display: flex;
@@ -50,19 +50,20 @@ body {
 }
 
 h4 {
-    color: white;
+    color: #777;
     align-self: center;
     text-align: center;
-    font-size: 35px;
-
+    font-size: 30px;
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: 700;
 }
 
 h5 {
-    color: white;
+    color: #777;
     align-self: center;
     text-align: center;
-    font-size: 20px;
-
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 .photoR {
@@ -74,6 +75,7 @@ h5 {
     width: 150px;
     border-radius: 50%;
     align-self: center;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .photoG {
@@ -85,13 +87,27 @@ h5 {
     width: 150px;
     border-radius: 50%;
     align-self: center;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 
 .countdown {
     width: 100vw;
     height: 50vh;
-    background-color: rgb(221, 141, 201);
+    background-color: #FAF1EC;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.countdown h3 {
+    font-family: 'Marck Script', cursive;
+    color: #777;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.clock {
+    text-align: center;
 }
 
 .places {
@@ -162,6 +178,20 @@ h3 {
     align-self: space-between;
     padding: 10px;
 
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    /* border: solid black 2px; */
+}
+
+li span {
+    display: block;
+    font-size: 20px;
 }
 
 /* div {
