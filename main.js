@@ -30,3 +30,12 @@ $(".burger").on("click", function () {
 $(".fa-times").on("click", function () {
     $(".fa-bars,.fa-times, nav, h1,h2").toggleClass("show");
 })
+
+//SCROLL
+$('nav a').on('click', function () {
+    const goToSection = "[data-section=" + $(this).attr('class') + "]";
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top
+    }, 1000)
+    $(".fa-bars,.fa-times, nav, h1, h2").toggleClass("show")
+})
