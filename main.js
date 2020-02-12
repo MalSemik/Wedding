@@ -25,8 +25,8 @@ let countDown = new Date('Jul 11, 2020 15:00:00').getTime(),
 
 //MENU
 $(".burger").on("click", function () {
-    $(".fa-bars,.fa-times, nav, h1").toggleClass("show");
+    $(".fa-bars,.fa-times, nav, h1, h2").toggleClass("show");
 })
 $(".fa-times").on("click", function () {
-    $(".fa-bars,.fa-times, nav, h1").toggleClass("show");
+    $(".fa-bars,.fa-times, nav, h1,h2").toggleClass("show");
 })
