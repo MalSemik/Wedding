@@ -1,3 +1,4 @@
+// COUNTDOWN
 const second = 1000,
     minute = second * 60,
     hour = minute * 60,
@@ -21,3 +22,11 @@ let countDown = new Date('Jul 11, 2020 15:00:00').getTime(),
         //}
 
     }, second)
+
+//MENU
+$(".burger").on("click", function () {
+    $(".fa-bars,.fa-times, nav, h1").toggleClass("show");
+})
+$(".fa-times").on("click", function () {
+    $(".fa-bars,.fa-times, nav, h1").toggleClass("show");
+})

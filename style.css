@@ -34,7 +34,7 @@ nav {
     position: absolute;
     top: 0;
     bottom: 0;
-    /* left: -300px; */
+    left: -100vw;
     width: 100vw;
     height: 90vh;
     background-color: antiquewhite;
@@ -44,14 +44,22 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
 
-nav a {
-    font-size: 30px;
-    color: #777;
+nav a,
+.fa-times {
+    font-size: 35px;
+    color: #666;
+    transition: 0.3s;
 }
 
-i.fas {
+nav a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+i.fa-bars {
     display: none;
     color: antiquewhite;
     opacity: 0.7;
@@ -61,8 +69,12 @@ i.show {
     display: block;
 }
 
-aside.show {
+nav.show {
     left: 0;
+}
+
+.fa-times {
+    color: #666;
 }
 
 /* .about {
