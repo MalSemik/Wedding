@@ -15,6 +15,56 @@ body {
     font-family: 'Marck Script', cursive;
 }
 
+
+
+.burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 30px;
+    line-height: 50px;
+    transition: .3s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* left: -300px; */
+    width: 100vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    transition: .3s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-size: 30px;
+    color: #777;
+}
+
+i.fas {
+    display: none;
+    color: antiquewhite;
+    opacity: 0.7;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}
+
 /* .about {
     height: 50vh;
     width: 100vw;
@@ -265,7 +315,7 @@ nav a {
 
 .confirm {
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
     background-image: url(flower.jpg);
     background-size: contain;
     position: relative;
@@ -276,6 +326,7 @@ nav a {
 .confirm h4 {
     font-size: 20px;
     padding-top: 15px;
+
 }
 
 .confirm a {
@@ -296,10 +347,12 @@ nav a {
     text-shadow: none;
     transition: 0.5s;
     text-decoration: none;
+    color: #777;
 }
 
 .confirm a:hover {
     background-color: rgb(243, 196, 171);
+    color: #999;
 }
 
 footer {
