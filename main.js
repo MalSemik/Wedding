@@ -12,8 +12,8 @@ let countDown = new Date('Jul 11, 2020 15:00:00').getTime(),
 
         document.getElementById('days').innerText = Math.floor(distance / (day)),
             document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
+        // document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
         //do something later when date is reached
         //if (distance < 0) {
@@ -86,14 +86,22 @@ $('nav a').on('click', function () {
 //     setTimeout(slideShow, imgDuration);
 // }
 // slideShow();
-
-var current = 0,
+const time = 5000;
+const dots = [...document.querySelectorAll(".dots span")];
+const changeDot = () => {
+    const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
+    dots[activeDot].classList.remove("active");
+    dots[active].classList.add("active")
+}
+var active = 0,
     slides = document.getElementsByTagName("img");
-
-setInterval(function () {
+const changeSlide = () => {
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.opacity = 0;
     }
-    current = (current != slides.length - 1) ? current + 1 : 0;
-    slides[current].style.opacity = 1;
-}, 5000);
+    active = (active != slides.length - 1) ? active + 1 : 0;
+    slides[active].style.opacity = 1;
+    changeDot();
+
+}
+setInterval(changeSlide, time)
