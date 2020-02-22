@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body {
 }
 
 
-
+/* NAVIGATION */
 .burger {
     position: absolute;
     top: 40px;
@@ -91,6 +92,36 @@ h2.show {
     display: none;
 }
 
+/* HEADER  */
+header {
+    background-image: url(people.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1,
+h2 {
+    color: antiquewhite;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 40px;
+    position: absolute;
+    bottom: 13vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 30px;
+    bottom: 5vh
+}
+
+
+/* ABOUT */
 .about {
     height: 50vh;
     width: 100vw;
@@ -155,7 +186,6 @@ img+img {
 }
 
 
-
 .rafal {
     background-color: #fff;
     height: 40vh;
@@ -214,7 +244,88 @@ h5 {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* SLOGAN */
+.slogan {
+    text-align: center;
+    background-image: url(media/love.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
+    color: white;
+    height: 35vh;
+    /* border-bottom: rgba(0, 0, 0, 0.5) 2px solid; */
+}
+
+.slogan p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .quote {
+    /* padding: 30px 10px; */
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 35vh;
+    /*  #003f72*/
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .slogan .quote {
+        padding: 50px 10px;
+
+    }
+
+
+    .slogan p {
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slogan {
+        height: 80vh;
+    }
+
+    .slogan .quote {
+        padding: 80px 10px;
+        height: 80vh;
+    }
+
+
+    .slogan p {
+        font-size: 40px;
+        width: 50%;
+    }
+
+    .slogan p.author {
+
+        font-size: 26px;
+    }
+}
+
+/* COUNTDOWN  */
 .countdown {
     width: 100vw;
     height: 30vh;
@@ -234,6 +345,7 @@ h5 {
     text-align: center;
 }
 
+/* SCHEDULE  */
 .places {
     background-color: rgb(255, 252, 241);
     width: 100vw;
@@ -318,76 +430,7 @@ li span {
     font-size: 20px;
 }
 
-/* div {
-    height: 200vh;
-   
-} */
-
-/* Header */
-/* header dla dużego */
-/* header {
-    background-image: url(people.jpg);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-} */
-
-header {
-    background-image: url(people.jpg);
-    min-height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-h1,
-h2 {
-    color: antiquewhite;
-    opacity: 0.7;
-    text-align: center;
-    line-height: 5vh;
-    font-size: 40px;
-    position: absolute;
-    bottom: 13vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-h2 {
-    font-size: 30px;
-    bottom: 5vh
-}
-
-/* Nawigacja */
-/* 
-nav {
-    height: 8vh;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.514);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    font-size: 0;
-    z-index: 999;
-}
-
-nav a {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 25%;
-    height: 40px;
-    line-height: 8vh;
-    font-size: 20px;
-    font-family: arial;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-} */
-
+/* CONFIRM  */
 .confirm {
     width: 100vw;
     height: 35vh;
@@ -437,6 +480,53 @@ footer {
 }
 
 
+/* div {
+    height: 200vh;
+   
+} */
+
+/* Header */
+/* header dla dużego */
+/* header {
+    background-image: url(people.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+
+/* Nawigacja */
+/* 
+nav {
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.514);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    z-index: 999;
+}
+
+nav a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    line-height: 8vh;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+} */
+
+
+
+
 @media(min-width: 1000px) {
 
     .places {
@@ -459,7 +549,7 @@ footer {
         border-radius: 20px;
         box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
         /* border: none; */
-        background-image: url(church.jpeg);
+        background-image: url(media/church.jpeg);
         height: 70vh;
         width: 40vw;
         background-size: cover;
@@ -479,7 +569,7 @@ footer {
         border-radius: 20px;
         box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
         /* border: none; */
-        background-image: url(adria.jpg);
+        background-image: url(media/adria.jpg);
         height: 70vh;
         width: 40vw;
         background-size: cover;
@@ -490,6 +580,14 @@ footer {
         /* align-self: center; */
 
 
+    }
+
+    .adria:hover {
+        background-size: 130%;
+    }
+
+    .church.hover {
+        background-size: 130%;
     }
 
     .bg,
@@ -532,6 +630,7 @@ footer {
 
     }
 
+
     .adria:hover .bg {
         background-color: rgba(0, 0, 0, 0.5);
         height: 70vh;
@@ -544,6 +643,7 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         opacity: 1;
+
     }
 
 
