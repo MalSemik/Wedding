@@ -54,7 +54,7 @@ $('nav a').on('click', function () {
 // ];
 
 // const image = document.querySelector("img.slider")
-// const time = 5000;
+// const time = 4000;
 // let active = 0;
 // const changeSlide = () => {
 //     document.getElementById('slider').className += "fadeOut";
@@ -64,10 +64,30 @@ $('nav a').on('click', function () {
 //     }
 //     image.src = slideList[active].img;
 //     document.getElementById('slider').className = "";
-
+//     changeDot();
 
 // }
-// setInterval(changeSlide, time)
+// let indexInterval = setInterval(changeSlide, time)
+
+// const keyChangeSlide = (e) => {
+//     if(e.keyCode == 37 || e.keyCode == 39) {
+//         clearInterval(indexInterval);
+//         e.keyCode == 37 ? active-- : active++;
+//         if (active == slideList.length){
+//             active = 0;
+//             console.log("w ifie jestem")
+//         } else if (active < 0){
+//             active = slideList.length -1;
+//             console.log('w elsifie jestem')
+//         }
+//         // changeSlide();
+//         changeDot();
+//         image.src = slideList[active].img;
+//         document.getElementById('slider').className = "";
+//         indexInterval = setInterval(changeSlide, time);
+//     }
+// }
+// window.addEventListener('keydown',keyChangeSlide)
 
 // var imgArray = ["media/us.png", "media/us2.png", "media/us3.png"];
 // curIndex = 0;
@@ -86,7 +106,8 @@ $('nav a').on('click', function () {
 //     setTimeout(slideShow, imgDuration);
 // }
 // slideShow();
-const time = 5000;
+
+const time =5000;
 const dots = [...document.querySelectorAll(".dots span")];
 const changeDot = () => {
     const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
@@ -104,4 +125,34 @@ const changeSlide = () => {
     changeDot();
 
 }
-setInterval(changeSlide, time)
+let indexInterval= setInterval(changeSlide, time)
+
+const keyChangeSlide = (e) => {
+    console.log(e.keyCode)
+    if(e.keyCode == 39) {
+        clearInterval(indexInterval);
+        if (active == slides.length){
+            active = 0;
+        } else if (active < 0){
+            active = slides.length -1;
+        }
+        changeSlide();
+        changeDot();
+        indexInterval = setInterval(changeSlide, time);
+    } else if(e.keyCode ==37){
+        clearInterval(indexInterval);
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = 0;
+        }
+        active--;
+        // active = (active != slides.length - 1) ? active -1 : 0;
+        if (active  <0){
+            active=slides.length -1;
+        }
+        slides[active].style.opacity = 1;
+        changeDot();
+        indexInterval = setInterval(changeSlide, time);
+    }
+}
+window.addEventListener('keydown',keyChangeSlide)
+
