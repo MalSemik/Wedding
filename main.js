@@ -155,4 +155,3 @@ const keyChangeSlide = (e) => {
     }
 }
 window.addEventListener('keydown',keyChangeSlide)
-
