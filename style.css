@@ -273,9 +273,9 @@ h4 {
     color: #777;
     align-self: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.75rem;
     /* font-family: 'Raleway', sans-serif; */
-    font-weight: 700;
+    font-weight: normal;
 }
 
 
@@ -738,7 +738,7 @@ footer {
 
 footer h3 {
 
-    font-size: 50px;
+    font-size: 1.75rem;
     color: white;
     text-align: center;
     align-self: space-between;
