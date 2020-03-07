@@ -39,6 +39,13 @@ $('nav a').on('click', function () {
     }, 1000)
     $(".fa-bars,.fa-times, nav, h1, h2").toggleClass("show")
 })
+$(".tracker").on("click", () => {
+    const goToSection = "[data-section='head']";
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top
+    }, 1000)
+})
+
 
 //CAROUSEL
 
@@ -107,7 +114,7 @@ $('nav a').on('click', function () {
 // }
 // slideShow();
 
-const time =5000;
+const time = 5000;
 const dots = [...document.querySelectorAll(".dots span")];
 const changeDot = () => {
     const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
@@ -125,33 +132,33 @@ const changeSlide = () => {
     changeDot();
 
 }
-let indexInterval= setInterval(changeSlide, time)
+let indexInterval = setInterval(changeSlide, time)
 
 const keyChangeSlide = (e) => {
     console.log(e.keyCode)
-    if(e.keyCode == 39) {
+    if (e.keyCode == 39) {
         clearInterval(indexInterval);
-        if (active == slides.length){
+        if (active == slides.length) {
             active = 0;
-        } else if (active < 0){
-            active = slides.length -1;
+        } else if (active < 0) {
+            active = slides.length - 1;
         }
         changeSlide();
         changeDot();
         indexInterval = setInterval(changeSlide, time);
-    } else if(e.keyCode ==37){
+    } else if (e.keyCode == 37) {
         clearInterval(indexInterval);
         for (var i = 0; i < slides.length; i++) {
             slides[i].style.opacity = 0;
         }
         active--;
         // active = (active != slides.length - 1) ? active -1 : 0;
-        if (active  <0){
-            active=slides.length -1;
+        if (active < 0) {
+            active = slides.length - 1;
         }
         slides[active].style.opacity = 1;
         changeDot();
         indexInterval = setInterval(changeSlide, time);
     }
 }
-window.addEventListener('keydown',keyChangeSlide)
+window.addEventListener('keydown', keyChangeSlide)

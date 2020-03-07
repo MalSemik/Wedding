@@ -19,7 +19,7 @@
 
 <body>
 
-    <header id="head">
+    <header id="head" data-section="head">
         <div class="burger">
             <i class="fas fa-bars show"></i>
         </div>
@@ -33,7 +33,10 @@
         <a class="aboutUs" href="#">O nas</a>
         <a class="day" href="#">Nasz dzień</a>
         <a class="RSVP" href="#">Będziesz?</a>
+        <a class="cont" href="#">Kontakt</a>
     </nav>
+    <div class="tracker"><i class="fas fa-arrow-up"></i></div>
+
     <section class="ourStory">
         <div class="us">
             <div class="aboutUs" id="aboutUs" data-section="aboutUs">
@@ -144,12 +147,26 @@
     </section>
 
     <div class="confirm" id="RSVP" data-section="RSVP">
-        <h4>Potwierdź swoje przybycie tutaj:</h4>
-        <a href="/login.html">Potwierdź</a>
+        <a href="/login.html">Potwierdź swoje przybycie</a>
     </div>
-    <footer>
+    <footer data-section="cont">
+        <h3>Kontakt</h3>
+        <div class="info">
+            <div class="contact">
 
-    </footer>
+                <h5>Gosia</h5>
+                <h5>Tel: 507-313-749</h5>
+                <h5>Email: malg.sem@gmail.com</h5>
+            </div>
+            <div class="contact">
+                <h5>Rafał</h5>
+                <h5>Tel: 517-066-369</h5>
+                <h5>Email: rafal.slaby222gmail.com</h5>
+            </div>
+        </div>
+
+
+    </footer data-section="cont">
     <script src="https://kit.fontawesome.com/46aaf45ce1.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
