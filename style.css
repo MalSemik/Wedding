@@ -678,7 +678,7 @@ li span {
 /* CONFIRM  */
 .confirm {
     max-width: 100vw;
-    height: 35vh;
+    height: 50vh;
     background-image: url(media/book.jpg);
     background-size: cover;
     position: relative;
@@ -733,7 +733,7 @@ li span {
 footer {
     background-color: #30393E;
     max-width: 100vw;
-    height: 40vh;
+    height: 50vh;
 }
 
 footer h3 {
